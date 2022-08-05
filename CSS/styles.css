@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:    #0170BB;
+    height: 100vh;
+    display: grid;
+    place-items: center center;
+    font-family: 'lato',sans-serif;
+}
+
+/*    both of the cards are in one div that I named Cards and style it  */
+.cards{
+    margin-top:10%;
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    padding: 20px;
+    grid-gap:40px;
+    }
+
+/* each card style */
+.card{
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #5A6E7E;
+    
+}
+.card:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 2rem 5rem #5A6E7E;
+}
+
+/* this is image part which I style it */
+.card-img {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+
+/* card contend and text style  */
+.card-content{
+    padding: 1.3rem 2rem;
+}
+
+.card-header {
+  font-family: 'lato',sans-serif;  
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+.card-text {
+  font-family: 'lato',sans-serif;  
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+
+/* a button for each cards which I style it like below */
+.read-more{
+    color: #ffffff;
+	background: #0170BB;
+	border: 2px solid #ffffff;
+	padding: .7em 1.3em;
+	margin-top: 20px;
+	border-radius: 50px;
+	text-transform: capitalize;
+	display: inline-block;
+	transition: all 0.3s ease-in-out;
+}
+.read-more:hover{
+    background: #5DBDB9;
+	color: #ffffff;
+	border: 2px solid #5DBDB9;
+	transition: all 0.3s ease-in-out;
+}
